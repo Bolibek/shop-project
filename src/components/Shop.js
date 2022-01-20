@@ -5,7 +5,8 @@ import Loader from "./Loader";
 import GoodList from "./GoodList";
 import Card from "./Cart";
 import BasketList from "./BasketList";
-import {toast} from "material-react-toastify"
+// import {toast} from "material-react-toastify"
+import { toast } from "react-toastify";
 export default function Shop() {
 	const [goods, setGoods] = useState([]);
 	const [loading, setLoading] = useState(true);
@@ -42,7 +43,7 @@ export default function Shop() {
   const removeFromBasket = (itemId) => {
     const newOrder = order.filter(item => item.id !== itemId)
 	  setOrder(newOrder)
-		toast.success("Goods deleted from the basket successfully!")
+		toast.error("Goods deleted from the basket successfully!")
 
 	}
 	const incrementQuantity = (itemId) => {
