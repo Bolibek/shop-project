@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { API_URL, API_KEY } from "../config";
 import Loader from "./Loader";
 import GoodList from "./GoodList";
-import Card from "./Card";
+import Card from "./Cart";
 import BasketList from "./BasketList";
 import {toast} from "material-react-toastify"
 export default function Shop() {

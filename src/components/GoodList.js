@@ -9,7 +9,7 @@ export default function GoodList(props) {
 		return (
 			<div className="goods">
 				{goods.map((item) => (
-					<GoodItem addToBasket={addToBasket} key={item.id +1} {...item} />
+					<GoodItem addToBasket={addToBasket} key={item.id} {...item} />
         ))}
 			</div>
 		);
